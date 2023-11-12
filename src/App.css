@@ -2,7 +2,7 @@ body, html {
     margin: 0;
     padding: 0;
     background-color: rgb(25, 35, 35);
-    color: rgb(200, 200, 200);
+    color: rgb(150, 150, 150);
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -12,4 +12,16 @@ body {
 
 h1, h2, h3 {
     line-height: 1.2em;
+}
+
+strong {
+    color: rgb(240, 240, 200);
+}
+
+a {
+    color: rgb(120, 220, 255);
+}
+
+a:visited {
+    color: rgb(200, 120, 200);
 }

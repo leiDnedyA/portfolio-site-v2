@@ -7,10 +7,10 @@ function App() {
 
   return (
     <>
-      <h1>Hi, I'm Ayden :&#41;</h1>
-      <h3>I'm a programmer and computer science undergrad, based out of Boston, MA.</h3>
-      <h3>Check me out on <a href={GITHUB_LINK}>GitHub</a> and <a href={LINKEDIN_LINK}>LinkedIn</a>!</h3>
+      <h1><strong>Hi, I'm Ayden :&#41;</strong></h1>
+      <h3>I'm a <strong>programmer</strong> and <strong>computer science undergrad</strong>, based out of <strong>Boston, MA</strong>.</h3>
       <hr/>
+      <h3>Check me out on <a href={GITHUB_LINK}>GitHub</a> and <a href={LINKEDIN_LINK}>LinkedIn</a>!</h3>
     </>
   )
 }

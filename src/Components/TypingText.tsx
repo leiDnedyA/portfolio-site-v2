@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 
 const CHAR_DELAY = 50;
+const CHAR_SKIP_RATE = .3;
 
 function TypingText({ children }: { children: string }): React.JSX.Element {
     const [currText, setCurrText] = useState('');
@@ -12,7 +13,10 @@ function TypingText({ children }: { children: string }): React.JSX.Element {
                     clearInterval(interval);
                     return prevText;
                 }
-                return prevText + children[prevText.length]
+                if (Math.random() > CHAR_SKIP_RATE) {
+                    return prevText + children[prevText.length]
+                }
+                return prevText;
             });
         }, CHAR_DELAY);
     }, []);
